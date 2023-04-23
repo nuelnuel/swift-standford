@@ -48,7 +48,8 @@ struct ContentView: View {
                         .foregroundColor(Color(red: 0.620, green: 0.220, blue: 0.220))
                 } else {
                     RoundedRectangle(cornerRadius: 10)
-                        .foregroundColor(Color(red: 1, green: 1, blue: 1))
+                        .stroke(lineWidth: 1).foregroundColor(Color(red: 0.620, green: 0.220, blue: 0.220))
+                    
                     Text(content).font(.largeTitle)
                 }
             }.onTapGesture {
@@ -75,10 +76,6 @@ struct ContentView: View {
             
         })
     }
-
-    
-    
-    
     
     
     // Views can not be modified.
