@@ -5,7 +5,6 @@
 //  Created by Ramón Núñez on 25/06/23.
 //
 
-// Me quede en el minuto 51:00 - Lecture 2
 import SwiftUI
 
 struct ContentView: View {
@@ -16,6 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Text("Memoriza los icónos")
             ScrollView{
                 LazyVGrid(columns: [GridItem(.adaptive(minimum:65))]){
                     ForEach(emojis[0..<emojiCount], id: \.self) {emoji in
@@ -105,3 +105,6 @@ struct ContentView_Previews: PreviewProvider {
     }
     
     
+// Differences: 1) Structs are value type (copy), class are reference type (pointers)
+// 1) Functional programing vs 2) Object oriented programming
+// 
