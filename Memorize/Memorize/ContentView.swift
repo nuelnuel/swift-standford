@@ -15,7 +15,6 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Memoriza los icónos")
             ScrollView{
                 LazyVGrid(columns: [GridItem(.adaptive(minimum:65))]){
                     ForEach(emojis[0..<emojiCount], id: \.self) {emoji in
@@ -28,45 +27,11 @@ struct ContentView: View {
             
             Spacer()
             
-            HStack{
-                remove
-                Spacer()
-                add
-            }
-            .padding(.horizontal)
-            .font(.largeTitle)
-            
-            
         }
     }
-    
-    var add: some View{
-        Button(action: {
-            if emojiCount < emojis.count {
-                emojiCount += 1
-            }
-        }, label: {
-            VStack{
-                Image(systemName: "plus.circle")
-            }
-            
-        })
-    }
-
-    var remove: some View{
-        Button(action: {
-            if emojiCount > 1 {
-                emojiCount -= 1
-            }
-            
-        }, label: {
-            VStack{
-                Image(systemName: "minus.circle")
-            }
-        })
         
-    }
 }
+
 
 
 
@@ -107,4 +72,4 @@ struct ContentView_Previews: PreviewProvider {
     
 // Differences: 1) Structs are value type (copy), class are reference type (pointers)
 // 1) Functional programing vs 2) Object oriented programming
-// 
+// 1) No inheritance vs 2) Inheritance
