@@ -99,10 +99,10 @@
 		A6B882832A49072F00A05B49 /* Memorize */ = {
 			isa = PBXGroup;
 			children = (
-				A6B882842A49072F00A05B49 /* MemorizeApp.swift */,
-				A6B882862A49072F00A05B49 /* ContentView.swift */,
 				A6A5D6B62A4BC5D800D30085 /* MemoryGame.swift */,
+				A6B882862A49072F00A05B49 /* ContentView.swift */,
 				A6A5D6B82A4BC80D00D30085 /* EmojiMemoryGame.swift */,
+				A6B882842A49072F00A05B49 /* MemorizeApp.swift */,
 				A6B882882A49073000A05B49 /* Assets.xcassets */,
 				A6B8828A2A49073000A05B49 /* Memorize.entitlements */,
 				A6B8828B2A49073000A05B49 /* Preview Content */,
